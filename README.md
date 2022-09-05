@@ -1,33 +1,56 @@
 # AndroidTV-ExoPlayer
 
-This is an Android TV app of ExoPlayer to play Dash, UDP, and other supported URLs.
+This is an ExoPlayer app built on AndroidTV with Android Studio.
 
-**Components of the application** are described below.
+The app has pre-loaded Dash video list , udp unicast reciver, udp multicast reciver, and UI for URL input.
 
-## 1. MainActivity
+The components of the app are described below.
 
-Android app is a collection of activities created within the application code or reused from another app. Activity represents a single user-interface (UI) in a app. Typically, one activity in an app is specified as the main activity, which is the first screen to appear when the user launches the app. 
+<h3> 1. AndroidManifest </h1>
 
-Using activities in the app has two requirements:
-1. declare in the [AndroidManifest.xml](app/src/main/AndroidManifest.xml)
-2. manage activity lifecycle
+<h4> Declare a TV activity </h4>
 
-more on https://developer.android.com/guide/components/activities/intro-activities
+```
+<activity
+            android:name=".MainActivity"
+            android:banner="@drawable/app_icon"
+            android:exported="true"
+            android:icon="@drawable/app_icon"
+            android:logo="@drawable/app_icon"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-more on https://developer.android.com/training/tv/start/start#tv-activity
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-## 2. MainFragment
+```
+<h4> Declare Leanback support </h4>
 
-## 3. CardPresenter
+```
+<uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+```
 
-## 4. Video Data class
+<h4> Declare touchscreen not required </h4>
 
-## 5. VideoList Object
+```
+<uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+```
+<h3> 2. MainActivity </h3>
 
-## 6. PlayerActivity
+<h3> 3. MainFragment</h3>
 
-## 7. PlayerFragment
 
-## 8. GetUrlActivity
+
+
+
+
+
+
 
 
