@@ -2,7 +2,7 @@
 
 This is an ExoPlayer app built on AndroidTV for testing different types of video streams.
 
-The app has pre-loaded Dash video list , udp unicast reciver, udp multicast reciver, and UI for URL input.
+The app has pre-loaded **DASH** video list , **UDP unicast** reciver, **UDP multicast** reciver, and UI for **URL input**.
 
 The components of the app are described below.
 
