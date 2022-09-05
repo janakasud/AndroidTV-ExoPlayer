@@ -1,7 +1,8 @@
 # AndroidTV-ExoPlayer
 
-This is an Android TV app of ExoPlayer to play Dash, UDP, and other supported URLs. 
-Components of the application are described below.
+This is an Android TV app of ExoPlayer to play Dash, UDP, and other supported URLs.
+
+*Components of the application* are described below.
 
 ## 1. MainActivity
 
