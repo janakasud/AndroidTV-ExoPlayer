@@ -1,6 +1,6 @@
 # AndroidTV-ExoPlayer
 
-This is an ExoPlayer app built on AndroidTV with Android Studio.
+This is an ExoPlayer app built on AndroidTV for testing different types of video streams.
 
 The app has pre-loaded Dash video list , udp unicast reciver, udp multicast reciver, and UI for URL input.
 
