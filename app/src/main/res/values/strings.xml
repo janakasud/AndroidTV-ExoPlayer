@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">XOP</string>
+    <string name="udp_default">udp://0.0.0.0:5000</string>
+</resources>
