@@ -43,6 +43,37 @@ The components of the app are described below.
 ```
 <h3> 2. MainActivity </h3>
 
+xml layout
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:deviceIds="tv"
+    tools:ignore="MergeRootFrame" />
+```
+
+MainFragment replaces the layout container identified by the R.id.main_browse_fragment ID. 
+
+```
+class MainActivity: FragmentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        if(savedInstanceState == null){
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.main_browse_fragment, MainFragment())
+                .commitNow()
+        }
+    }
+}
+
+```
+
 <h3> 3. MainFragment</h3>
 
 
